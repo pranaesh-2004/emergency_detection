@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Traffic Management</title>
+</head>
+<body>
+    <h1>Upload Traffic Video</h1>
+    <form action="/" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="video/*" required>
+        <button type="submit">Upload and Start</button>
+    </form>
+
+    <h2>Live Traffic Video:</h2>
+    <img src="{{ url_for('video_feed') }}" width="800px">
+</body>
+</html>
